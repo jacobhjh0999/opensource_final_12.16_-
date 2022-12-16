@@ -46,7 +46,7 @@ Tumor classification의 정확도를 높였습니다.
 ## Screenshots
 
 ### 각 classifier의 개별 정확도와 voting classifier을 사용한 전체 정확도는 다음과 같습니다.
-<img width="483" alt="개별정확도와 전체정확도 (2제출)" src="https://user-images.githubusercontent.com/115199282/207026033-59a18bf2-3664-43b8-b009-3c4f63f46297.png">
+<img width="645" alt="최종정확도93 73" src="https://user-images.githubusercontent.com/115199282/208121645-62097b08-a162-4733-8e5f-c059704eb329.png">
 
 
 
