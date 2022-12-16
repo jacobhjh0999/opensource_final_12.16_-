@@ -35,11 +35,11 @@ Tumor classification의 정확도를 높였습니다.
     nsvc=NuSVC(random_state=0,probability=True, nu=0.05) 
     
 ### Voting Classifier의 코드입니다. 
-### Soft, Hard Voting 중 Soft Voting을 사용했습니다.
+### Soft, Hard Voting 중 Hard Voting을 사용했습니다.
 
-    soft_vote  = VotingClassifier(models, voting='soft')
-    soft_vote.fit(X_train, y_train)
-    y_pred = soft_vote.predict(X_test)
+    hard_vote  = VotingClassifier(models, voting='hard')
+    hard_vote.fit(X_train, y_train)
+    y_pred = hard_vote.predict(X_test)
 
 
 ***
