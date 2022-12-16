@@ -32,7 +32,14 @@ Tumor classification의 정확도를 높였습니다.
     knn=KNeighborsClassifier(n_jobs=-1,n_neighbors=1,metric='manhattan')
     svc=SVC(gamma=0.01,C=1000,probability=True)
     hgbc = HistGradientBoostingClassifier(random_state=0,max_iter=800, learning_rate=0.1 )
-    nsvc=NuSVC(random_state=0,probability=True, nu=0.05)  
+    nsvc=NuSVC(random_state=0,probability=True, nu=0.05) 
+    
+### Voting Classifier의 코드입니다. 
+### Soft, Hard Voting 중 Soft Voting을 사용했습니다.
+
+    soft_vote  = VotingClassifier(models, voting='soft')
+    soft_vote.fit(X_train, y_train)
+    y_pred = soft_vote.predict(X_test)
 
 
 ***
